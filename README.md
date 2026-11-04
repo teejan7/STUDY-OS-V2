@@ -17,14 +17,6 @@ StudyOS is a reusable exam management template for students who want a fast, loc
 - PWA-ready build with offline precaching
 - Dark terminal-style interface
 
-## Screenshots
-
-Add screenshots after customizing or deploying your instance:
-
-- `screenshots/dashboard.png`
-- `screenshots/notes-vault.png`
-- `screenshots/question-bank.png`
-- `screenshots/resources.png`
 
 ## Installation
 
