@@ -13,7 +13,7 @@ export function migrateStudyOS() {
     }
     safeSet('studyos.schema', '2');
   }
-  if (safeGet('studyos.s7.examDataCorrected') !== 'true') {
+  if (safeGet('studyos.s7.examDataCorrected.v2') !== 'true') {
     try {
       const stored = JSON.parse(safeGet('studyos.s7.subjects') ?? '[]');
       const canonical = new Map(SUBJECTS.map((subject) => [subject.code, subject]));
@@ -21,7 +21,7 @@ export function migrateStudyOS() {
         safeSet('studyos.s7.subjects', JSON.stringify(stored.map((subject) => canonical.has(subject.code) ? { ...subject, ...canonical.get(subject.code) } : subject)));
       }
     } catch { /* invalid stored subjects are handled by the app defaults */ }
-    safeSet('studyos.s7.examDataCorrected', 'true');
+    safeSet('studyos.s7.examDataCorrected.v2', 'true');
   }
   if (safeGet('studyos.s7.seeded') === 'true') return;
   safeSet('studyos.s7.reminders', JSON.stringify([

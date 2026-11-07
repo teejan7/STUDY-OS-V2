@@ -33,6 +33,6 @@ export const SUBJECTS = [
   { code: 'CST401', name: 'Artificial Intelligence', credits: 3, examDate: '2026-11-23' },
   { code: 'CST463', name: 'Web Programming', credits: 3, examDate: '2026-11-25' },
   { code: 'CET455', name: 'Environment Health and Safety', credits: 3, examDate: '2026-11-27' },
-  { code: 'MCN401', name: 'Industrial Safety Engineering', credits: 0, examDate: '2026-11-30' },
-  { code: 'CSL411', name: 'Compiler Lab', credits: 2, examDate: '2026-11-10' }
+  { code: 'MCN401', name: 'Industrial Safety Engineering', credits: 0, examDate: '2026-12-02' },
+  { code: 'CSL411', name: 'Compiler Lab', credits: 2, examDate: '2026-11-09' }
 ] as const;
